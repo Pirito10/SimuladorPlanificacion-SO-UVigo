@@ -1,11 +1,11 @@
 import argparse, random
-from utilidades import generar_cola, verificar_solicitudes_en_rango, verificar_posicion_en_rango, simular_tiempo_total, dibujar_grafica
-from algoritmos.fcfs import fcfs
-from algoritmos.sstf import sstf
-from algoritmos.scan import scan
-from algoritmos.c_scan import c_scan
-from algoritmos.look import look
-from algoritmos.c_look import c_look
+from utilities import generar_cola, verificar_solicitudes_en_rango, verificar_posicion_en_rango, simular_tiempo_total, dibujar_grafica
+from algorithms.fcfs import fcfs
+from algorithms.sstf import sstf
+from algorithms.scan import scan
+from algorithms.c_scan import c_scan
+from algorithms.look import look
+from algorithms.c_look import c_look
 
 def main():
     # Manejo de parámetros de entrada
