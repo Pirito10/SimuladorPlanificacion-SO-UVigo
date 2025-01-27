@@ -5,7 +5,7 @@ Hard Disk Scheduling Algorith Simulator project for "[Sistemas Operativos](https
 # How To Run
 
 ### Requirements
-Make sure you have Python 3.x installed on your system. Then install the required dependencies with:
+Make sure you have Python installed on your system. Then install the required dependencies with:
 
 ```bash
 pip install -r requirements.txt
@@ -33,22 +33,22 @@ python simulator.py [OPTIONS]
 | `--help`                       | `-h`  | Show the help message                    |
 
 ### Algorithms
-1. **FCFS (First Come, First Served)**  
+- **FCFS (First Come, First Served)**  
    The simplest algorithm where requests are handled in the order they arrive. It does not optimize the movement of the disk head and can lead to high seek times.
 
-2. **SSTF (Shortest Seek Time First)**  
+- **SSTF (Shortest Seek Time First)**  
    This algorithm selects the request that requires the least movement of the disk head from its current position, reducing seek time. However, it may cause starvation for requests far from the current head position.
 
-3. **SCAN**  
+- **SCAN**  
    The disk head moves in one direction, fulfilling all requests until it reaches the end of the disk. It then reverses direction and processes requests in the opposite direction.
 
-4. **C-SCAN (Circular SCAN)**  
+- **C-SCAN (Circular SCAN)**  
    Similar to SCAN, but instead of reversing direction, the disk head jumps back to the start of the disk after reaching the end, processing requests only in one direction.
 
-5. **LOOK**  
+- **LOOK**  
    A variation of SCAN where the disk head only travels as far as the last request in each direction, avoiding unnecessary movement to the physical end of the disk.
 
-6. **C-LOOK (Circular LOOK)**  
+- **C-LOOK (Circular LOOK)**  
    Similar to LOOK, but the head jumps back to the start of the request queue instead of reversing direction.
 
 ### Example
