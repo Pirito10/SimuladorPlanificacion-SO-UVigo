@@ -1,5 +1,5 @@
 import argparse, random
-from src.utilities import generar_cola, verificar_solicitudes_en_rango, verificar_posicion_en_rango, simular_tiempo_total, dibujar_grafica
+from utilities import generar_cola, verificar_solicitudes_en_rango, verificar_posicion_en_rango, simular_tiempo_total, dibujar_grafica
 from algorithms.fcfs import fcfs
 from algorithms.sstf import sstf
 from algorithms.scan import scan
