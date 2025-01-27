@@ -12,9 +12,10 @@ pip install -r requirements.txt
 ```
 
 ### Usage
-To execute the simulator, run the following command:
+To execute the simulator, run the following commands:
 
 ```bash
+cd src
 python simulator.py [OPTIONS]
 ```
 
