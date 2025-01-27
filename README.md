@@ -15,7 +15,7 @@ pip install -r requirements.txt
 To execute the simulator, run the following command:
 
 ```bash
-python simulador_planificacion.py [OPTIONS]
+python simulator.py [OPTIONS]
 ```
 
 ### Options
@@ -55,5 +55,5 @@ python simulador_planificacion.py [OPTIONS]
 Simulate a disk with 200 cylinders, an initial head position at cylinder 50, and a queue of requests [10, 30, 150, 190], using the FCFS and SSTF algorithms:
 
 ```bash
-python simulador_planificacion.py -c 200 -p 50 -q 10 30 150 190 -a FCFS SSTF
+python simulator.py -c 200 -p 50 -q 10 30 150 190 -a FCFS SSTF
 ```
