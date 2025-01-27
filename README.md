@@ -18,7 +18,6 @@ To execute the simulator, run the following command:
 python simulator.py [OPTIONS]
 ```
 
-### Options
 | Option                         | Short | Description                                         |
 |--------------------------------|-------|-----------------------------------------------------|
 | `--cilindros CILINDROS`        | `-c`  | Number of cylinders in the disk                    |
