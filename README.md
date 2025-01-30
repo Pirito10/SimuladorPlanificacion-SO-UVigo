@@ -4,7 +4,7 @@
 ## About The Project
 This project simulates various disk scheduling algorithms to demonstrate how operating systems handle I/O requests in a hard disk drive. It incorporates theoretical concepts of operating systems and algorithms, showcasing:
 - Simulation of real-world hard disk scheduling algorithms.
-- Modular and extesible design.
+- Modular and extensible design.
 - Customizable parameters for cylinder requests, head position, and timing.
 
 ## How To Run
