@@ -10,7 +10,7 @@ This project simulates various disk scheduling algorithms to demonstrate how ope
 ## How To Run
 
 ### Requirements
-Make sure you have Python installed on your system. Then install the required dependencies with:
+Make sure you have [Python](https://www.python.org/downloads/) installed on your system. Then install the required dependencies with:
 
 ```bash
 pip install -r requirements.txt
