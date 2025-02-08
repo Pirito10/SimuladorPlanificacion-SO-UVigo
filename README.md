@@ -1,5 +1,5 @@
 # Simulador de Planificación
-_Simulador de Planificación_ is a **Hard Disk Drive Scheduling Algorith Simulator** developed as part of the course "[Sistemas Operativos](https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=305&ensenyament=V05G301V01&assignatura=V05G301V01303)" in the Telecommunications Engineering Degree at the Universidad de Vigo (2023 - 2024).
+_Simulador de Planificación_ is a **Hard Disk Drive Scheduling Algorith Simulator** developed as part of the course "[Sistemas Operativos](https://secretaria.uvigo.gal/docnet-nuevo/guia_docent/?centre=305&ensenyament=V05G301V01&assignatura=V05G301V01303&any_academic=2023_24)" in the Telecommunications Engineering Degree at the Universidad de Vigo (2023 - 2024).
 
 ## About The Project
 This project simulates various disk scheduling algorithms to demonstrate how operating systems handle I/O requests in a hard disk drive. It incorporates theoretical concepts of operating systems and algorithms, showcasing:
