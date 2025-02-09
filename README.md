@@ -61,4 +61,4 @@ python simulator.py -c 200 -p 50 -q 10 30 150 190 -a FCFS SSTF
 ```
 
 ## About The Code
-There is no dedicated documentation for this project. Refer to [`Presentación.pdf`](docs/Presentación.pdf) for a high-level overview and results, or inspect the code for a deeper understanding of the system and how it works.
+Refer to [`Presentación.pdf`](docs/Presentación.pdf) for a high-level overview of the project and results, or inspect the code for a deeper understanding of the system and how it works.
