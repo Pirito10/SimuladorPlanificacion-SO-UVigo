@@ -20,21 +20,21 @@ pip install -r requirements.txt
 Once the dependencies are installed, you can execute the simulator by running:
 
 ```bash
-python src/simulator.py [OPTIONS]
+python src/simulator.py [--cilindros CYLINDERS] [--cola QUEUE] [--algoritmos ALGORITHMS] [--posicion_inicial POSITION] [--tiempo_arranque TIME] [--tiempo_desplazamiento TIME] [--tiempo_detencion TIME] [--tiempo_latencia TIME] [--tiempo_transferencia TIME] [--help]
 ```
 
-| Option                         | Short | Description                                         |
-|--------------------------------|-------|-----------------------------------------------------|
-| `--cilindros CYLINDERS`        | `-c`  | Number of cylinders in the disk                    |
-| `--cola QUEUE`       | `-q`  | Queue of requests to the cylinders                 |
-| `--algoritmos ALGORITHMS`| `-a`  | Algorithm(s) to simulate                           |
-| `--posicion_inicial POSITION`  | `-p`  | Initial position of the head                       |
-| `--tiempo_arranque TIME`            | `-ta` | Startup time in milliseconds                       |
-| `--tiempo_desplazamiento TIME`      | `-tds`| Time to move between cylinders in milliseconds     |
-| `--tiempo_detencion TIME`           | `-td` | Stop time in milliseconds                          |
-| `--tiempo_latencia TIME`            | `-tl` | Latency time in milliseconds                       |
-| `--tiempo_transferencia TIME`       | `-tt` | Transfer time in milliseconds                      |
-| `--help`                       | `-h`  | Show the help message                    |
+| Option                         | Short | Description                                         | Example |
+|--------------------------------|-------|-----------------------------------------------------|---------|
+| `--cilindros CYLINDERS`        | `-c`  | Number of cylinders in the disk                    | `-c 200` |
+| `--cola QUEUE`       | `-q`  | Queue of requests to the cylinders                 | `-q 10 30 150 190` |
+| `--algoritmos ALGORITHMS`| `-a`  | Algorithm(s) to simulate                           | `-a FCFS SSTF` |
+| `--posicion_inicial POSITION`  | `-p`  | Initial position of the head                       | `-p 50` |
+| `--tiempo_arranque TIME`            | `-ta` | Startup time in milliseconds                       | `-ta 3` |
+| `--tiempo_desplazamiento TIME`      | `-tds`| Time to move between cylinders in milliseconds     | `-tds 0.2` |
+| `--tiempo_detencion TIME`           | `-td` | Stop time in milliseconds                          | `-td 1` |
+| `--tiempo_latencia TIME`            | `-tl` | Latency time in milliseconds                       | `-tl 4` |
+| `--tiempo_transferencia TIME`       | `-tt` | Transfer time in milliseconds                      | `-tt 0.5` |
+| `--help`                       | `-h`  | Show the help message                    | `-h` |
 
 #### Algorithms
 - **FCFS (First Come, First Served)**  
@@ -56,8 +56,6 @@ python src/simulator.py [OPTIONS]
    Similar to LOOK, but the head jumps back to the start of the request queue instead of reversing direction.
 
 #### Example
-Simulate a disk with 200 cylinders, an initial head position at cylinder 50, and a queue of requests [10, 30, 150, 190], using the FCFS and SSTF algorithms:
-
 ```bash
 python simulator.py -c 200 -p 50 -q 10 30 150 190 -a FCFS SSTF
 ```
